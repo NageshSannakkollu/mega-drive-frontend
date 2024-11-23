@@ -1,0 +1,17 @@
+.logo {
+    width: 20%;
+    height: 100px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.interested {
+    padding: 10px 35px;
+    background-image: linear-gradient(to right,#19639f98,#f9444496,#387e3c);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 0px;
+}

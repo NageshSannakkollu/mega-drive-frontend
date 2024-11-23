@@ -1,0 +1,82 @@
+.main-app-container {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fafafa;
+    padding: 0px 30px;
+}
+.task-heading-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.task-list-tile-add-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-lists {
+    width: 100%;
+}
+.task-heading-lists-inside-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+.task-un-order-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.action {
+    border: 1px solid #fafafa;
+    align-items: center;
+}
+.id-name-status-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.task-list-title {
+    color: #fafafa;
+    font-weight: 700;
+}
+.add-button {
+    background-color: aqua;
+    padding: 8px 20px;
+    border-radius: 6px;     
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+}
+.delete-button {
+    background-color: red;
+    padding: 5px 20px;
+    font-weight: 700;
+    color: #fafafa;
+    border-radius: 6px;     
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+}
+.no-notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.headings-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.id {
+    width: 10%;
+}
+
+.table-contents {
+    width: 90%;
+    text-align: center;
+}

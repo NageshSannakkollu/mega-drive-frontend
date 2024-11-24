@@ -24,7 +24,7 @@ const HomePage = () => {
   const clickOnDelete = (id) => {
     console.log(id)
     // console.log(`http://localhost:3006/notes/${_id}`)
-    axios.delete(`https://mega-drive-backend.netlify.app/${id}`)
+    axios.delete(`https://mega-drive-backend.netlify.app/notes/${id}`)
     .then(response => {
       setDeleted(true)
     }).catch(err => {

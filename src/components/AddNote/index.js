@@ -16,7 +16,7 @@ const AddNote = () => {
     const addNoteHandler = e => {
         e.preventDefault()
         console.log("Values:",values)
-        axios.post(`http://localhost:3006/notes`,values)
+        axios.post(`https://mega-drive-backend.netlify.app/notes`,values)
         .then((response)=> {
             console.log(response)
             navigate("/")

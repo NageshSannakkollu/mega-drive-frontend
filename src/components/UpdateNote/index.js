@@ -12,7 +12,7 @@ const UpdateNote = () => {
 
     useEffect(() => {
         const getData = async() => {
-           await axios.get(`http://localhost:3006/notes/${id}`)
+           await axios.get(`https://mega-drive-backend.netlify.app/notes/${id}`)
             .then((response) => {
                 console.log(response.data)
                 setValues([response.data])
@@ -26,7 +26,7 @@ const UpdateNote = () => {
     const updateTaskHandler = event => {
         event.preventDefault()
         console.log("Handler Clicked")
-        axios.put(`http://localhost:3006/notes/:${id}`,values[0])
+        axios.put(`https://mega-drive-backend.netlify.app/notes/${id}`,values[0])
         .then(response => {
             navigate("/")
             console.log("Response:",response)

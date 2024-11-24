@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import {useEffect,useState} from 'react'
 import Header from "../Header"
 import axios from 'axios'
-import NotesItem from "../NotesItem"
 import "./index.css"
 
 
@@ -15,7 +14,7 @@ const HomePage = () => {
     if(deleted){
       setDeleted(false)
     const getTaskData = async() => {
-      const response = await fetch("http://localhost:3006/notes");
+      const response = await fetch("https://mega-drive-backend.netlify.app/notes");
       const data = await response.json()
       setNotesList(data)
     }
@@ -25,7 +24,7 @@ const HomePage = () => {
   const clickOnDelete = (id) => {
     console.log(id)
     // console.log(`http://localhost:3006/notes/${_id}`)
-    axios.delete(`http://localhost:3006/notes/${id}`)
+    axios.delete(`https://mega-drive-backend.netlify.app/${id}`)
     .then(response => {
       setDeleted(true)
     }).catch(err => {
